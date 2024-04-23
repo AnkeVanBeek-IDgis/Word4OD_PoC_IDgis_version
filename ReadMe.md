@@ -1,5 +1,6 @@
-PoC voor het verkennen van mogelijkheden voor react in combinatie met formulieren.
-Tevens is een koppeling met een postgres database nodig.
+PoC voor het verkennen van mogelijkheden voor react in combinatie met formulieren (javascript / typescript / react)
+
+Voor het maken van een koppeling naar de postgres database is express gebruikt.
 
 let op:
     voor starten zowel in 'client' als in map 'backend' opstarten !! ( npm start )
