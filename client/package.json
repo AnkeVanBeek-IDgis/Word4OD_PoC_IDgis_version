@@ -1,0 +1,45 @@
+{
+  "name": "poc_template_react-js-typescript",
+  "version": "1.0.0",
+  "description": "gebaseerd op https://mrseanbaines.medium.com/how-to-write-a-minimal-react-boilerplate-from-scratch-85ba17757040",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --mode=development",
+    "build": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnkeVanBeek-IDgis/Poc_template_react-js-typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnkeVanBeek-IDgis/Poc_template_react-js-typescript/issues"
+  },
+  "homepage": "https://github.com/AnkeVanBeek-IDgis/Poc_template_react-js-typescript#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.4",
+    "@babel/preset-env": "^7.24.4",
+    "@babel/preset-react": "^7.24.1",
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "babel-loader": "^9.1.3",
+    "css-loader": "^6.7.3",
+    "eslint": "^8.31.0",
+    "eslint-plugin-react": "^7.31.11",
+    "html-webpack-plugin": "^5.6.0",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.4.5",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  }
+}

@@ -1,0 +1,84 @@
+{
+    "elementen": [
+      {
+        "id": 1,
+        "tekst": "Dit is het hoofdstuk. Het bevat een verzameling paragrafen en lid-elementen.",
+        "type": "hoofdstuk"
+      },
+      {
+        "id": 2,
+        "tekst": "Dit is een paragraaf. Het bevat belangrijke informatie over het onderwerp.",
+        "type": "paragraaf"
+      },
+      {
+        "id": 3,
+        "tekst": "Dit is een lid-element. Het bevat een specifiek detail over het onderwerp.",
+        "type": "lid"
+      },
+      {
+        "id": 4,
+        "tekst": "Dit is een lid-element. Het biedt aanvullende context voor een eerder besproken punt.",
+        "type": "lid"
+      },
+      {
+        "id": 5,
+        "tekst": "Dit is een paragraaf. Hierin worden enkele voorbeelden gegeven ter verduidelijking.",
+        "type": "paragraaf"
+      },
+      {
+        "id": 6,
+        "tekst": "Dit is een lid-element. Het illustreert een voorbeeld dat in het hoofdstuk is genoemd.",
+        "type": "lid"
+      },
+      {
+        "id": 7,
+        "tekst": "Dit is een lid-element. Het introduceert een nieuw aspect dat verband houdt met het onderwerp.",
+        "type": "lid"
+      },
+      {
+        "id": 8,
+        "tekst": "Dit is een paragraaf. Het gaat dieper in op een specifiek aspect van het onderwerp.",
+        "type": "paragraaf"
+      },
+      {
+        "id": 9,
+        "tekst": "Dit is een lid-element. Het bevat een citaat van een expert op het gebied.",
+        "type": "lid"
+      },
+      {
+        "id": 10,
+        "tekst": "Dit is een lid-element. Het benadrukt een belangrijk punt dat in het hoofdstuk wordt besproken.",
+        "type": "lid"
+      },
+      {
+        "id": 11,
+        "tekst": "Dit is een paragraaf. Hierin worden mogelijke toepassingen besproken.",
+        "type": "paragraaf"
+      },
+      {
+        "id": 12,
+        "tekst": "Dit is een lid-element. Het biedt een kritische analyse van een bepaald aspect.",
+        "type": "lid"
+      },
+      {
+        "id": 13,
+        "tekst": "Dit is een lid-element. Het biedt een vergelijking tussen twee relevante concepten.",
+        "type": "lid"
+      },
+      {
+        "id": 14,
+        "tekst": "Dit is een paragraaf. Het sluit het hoofdstuk af met een samenvatting.",
+        "type": "paragraaf"
+      },
+      {
+        "id": 15,
+        "tekst": "Dit is een lid-element. Het geeft een statistiek weer die relevant is voor het onderwerp.",
+        "type": "lid"
+      },
+      {
+        "id": 16,
+        "tekst": "Dit is een lid-element. Het bevat een suggestie voor verder lezen over het onderwerp.",
+        "type": "lid"
+      }
+    ]
+  }
