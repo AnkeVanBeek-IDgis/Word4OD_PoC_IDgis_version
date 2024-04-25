@@ -1,13 +1,13 @@
 import React from "react";
-import TekstElement from "./TekstElement";
 import "./App.css";
+import HoofdlijnElement from "./HoofdlijnElement";
 
 function App() {
 
     return (
       <div>
         <h1>Hello world !</h1>
-        <TekstElement />
+      <HoofdlijnElement />
       </div>
     );
   }

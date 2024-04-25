@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const port = 3001
 
-const gebiedsaanwijzingen_model = require('./gebiedsaanwijzingenModel')       //dit is de import van alle requests
+const waardelijsten_model = require('./waardelijstenModel')       //dit is de import van alle requests
 
 app.use(express.json())
 
@@ -18,7 +18,7 @@ app.use(function (req, res, next) {
   });
 
   app.get('/', (req, res) => {
-    gebiedsaanwijzingen_model.getGebiedsaanwijzingen()
+    waardelijsten_model.getHoofdlijnen()
     .then(response => {
       res.status(200).send(response);
     })
@@ -27,15 +27,15 @@ app.use(function (req, res, next) {
     })
   })
 
-  app.get('/gebAanwTekstdeel', (req, res) => {
-    gebiedsaanwijzingen_model.getGebiedsaanwijzingenTekstdeel()
-    .then(response => {
-      res.status(200).send(response);
-    })
-    .catch(error => {
-      res.status(500).send(error);
-    })
-  })
+  // app.get('/getHoofdlijnen', (req, res) => {
+  //   waardelijsten_model.getHoofdlijnen()
+  //   .then(response => {
+  //     res.status(200).send(response);
+  //   })
+  //   .catch(error => {
+  //     res.status(500).send(error);
+  //   })
+  // })
 
 app.listen(port, () => {
   console.log(`App running on port ${port}.`)
