@@ -1,11 +1,5 @@
 import React, { useState, useEffect } from "react";
-import elementenData from "./tekst_data.json";
 
-type Element = {
-  id: number;
-  tekst: string;
-  type: string;
-};
 type Hoofdlijn = {
   id: number;
   identificatie: string,
@@ -15,12 +9,11 @@ type Hoofdlijn = {
   datum_begin: Date;
 };
 
-
 const HoofdlijnElement = () => {
 
-  const [hoofdlijnenData, setHoofdlijnenData] = useState<Hoofdlijn[]>();
+  const [hoofdlijnenData, setHoofdlijnenData] = useState<Hoofdlijn[]>([]);
 
-  //haal alle mogelijke annotaties op
+  //haal alle mogelijke hoofdlijnen op
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -38,8 +31,10 @@ const HoofdlijnElement = () => {
 
     return (
       <div key={hoofdlijn.id} >
-        <div className="id">Het id van de hoofdlijn is: {hoofdlijn.id}</div>
-        <div className="tekst">{hoofdlijn.naam}</div>
+      <div className="id">Het id van de hoofdlijn is: {hoofdlijn.id}</div>
+        <div className="soort">- Soort hoofdlijn: {hoofdlijn.soort_hoofdlijn_id}</div>
+        <div className="tekst">- Naam: {hoofdlijn.naam}</div>
+        <br/>
       </div>
     );
   });
