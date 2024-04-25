@@ -7,6 +7,46 @@ h1 {
     font-size: 24pt;
 }
 
-.gebAanw {
-    margin-left: 50px;
+/* Stijl voor de ul in TabComponent voor verticale layout */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Stijl voor de lijstitems en knoppen, zodat ze onder elkaar staan */
+ul {
+    display: flex;  /* Zet de knoppen onder elkaar */
+    flex-direction: column;
+}
+
+/* Stijl voor de knoppen binnen de ul */
+ul button {
+    background-color: inherit;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    text-align: left;  /* Zorgt ervoor dat de tekst links uitgelijnd is */
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    width: 15%;  /* Zorgt ervoor dat de knoppen niet de volledige breedte innemen */
+}
+
+/* Verandering van achtergrondkleur bij hover */
+ul button:hover {
+    background-color: #ddd;
+}
+
+/* Actieve tab-knop */
+ul button.active {
+    background-color: #ccc;
+}
+
+/* Stijl voor de tab content */
+.tabcontent {
+    padding: 12px;
+    border: 1px solid #ccc;
+    height: 300px;
 }
