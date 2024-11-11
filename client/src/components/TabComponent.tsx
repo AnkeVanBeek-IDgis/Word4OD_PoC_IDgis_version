@@ -2,36 +2,49 @@ import React, { useState, useEffect } from "react";
 
 const tabData = [
   {
-    title: "Locaties",
-    link: '/locaties'
+    id: 1,
+    title: "Locaties"
   },
   {
-    title: "Activiteiten",
-    link: '/activiteiten'
+    id: 2,
+    title: "Activiteiten"
   },
   {
-    title: "Gebiedsaanwijzingen",
-    link: '/gebiedsaanwijzingen'
+    id: 3,
+    title: "Gebiedsaanwijzingen"
   },
   {
-    title: "Hoofdlijnen",
-    link: '/hoofdlijnen'
+    id: 4,
+    title: "Hoofdlijnen"
   },
   {
-    title: "Kaarten",
-    link: '/kaarten'
+    id: 5,
+    title: "Kaarten"
   },
 ];
 
 const TabComponent = () => {
+
+type Tab = {
+  id: number,
+  title: string
+};
+
   const [navs] = useState(tabData);
+  const [selectedTab, setSelectedTab] = useState<Tab | null>(null);
+
+  const handleClick = (id: number, title: string) => {
+    console.log("geklikt op ", title);
+    // Hier kun je andere functionaliteiten toevoegen
+    setSelectedTab(id);
+  };
 
   return (
 
     <>
       <ul className='element'>
         {navs.map((nav, index) => (
-          <button key={index} className='li' onClick={() => console.log("geklikt op ", nav.title)}>
+          <button key={index} className='li' onClick={() => handleClick(nav.id, nav.title)}>
             {nav.title}
           </button>
         ))}
